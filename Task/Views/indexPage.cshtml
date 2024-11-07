@@ -1,0 +1,72 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fictional Company</title>
+    <link rel="icon" href="https://gotastelivestorage.blob.core.windows.net/taskimagesrafael/symbol.ico" type="image/x-icon">
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div class="facebook-twitter-linkedin-profile" style="background-color: #4F5955; height:50px">
+        <nav>
+            <div class="logo">
+                <p style="font-size:13px;color:white">Klarabergsviadukten 90, 111 64 Stockholm</p>
+            </div>
+
+          <div class="d-flex align-items-center" style="gap:10px;">
+                <div style="height: 50px; width: 1px; background-color: #606966;"></div> <!-- Vertical Line -->
+                <i class="fa fa-facebook"></i>
+                <div style="height: 50px; width: 1px; background-color: #606966;"></div> <!-- Vertical Line -->
+                <i class="fa fa-twitter"></i>
+                <div style="height: 50px; width: 1px; background-color: #606966;"></div> <!-- Vertical Line -->
+                <i class="fa fa-linkedin"></i>
+                 <div style="height: 50px; width: 1px; background-color: #606966;"></div> <!-- Vertical Line -->
+            </div>
+
+
+        </nav>
+    </div>
+    <header>
+        <nav>
+            <a class="logo" href="/home"><img src="https://gotastelivestorage.blob.core.windows.net/taskimagesrafael/Symbol.png" style="width:3rem;padding-right:10px"/>Onatrix</a>
+            <div class="nav-links">
+                <a href="aboutus">About</a>
+                <a href="services">Services</a>
+                <a href="projects">Projects</a>
+                <a href="contactus">Contact</a>
+            </div>
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </nav>
+    </header>
+    @RenderBody();
+
+    <section style="background-color:black;">
+      <div style="display: flex; margin: 2px;padding: 10px 0px 0px 183px;">
+          <p style="color: white; margin: 0px; font-size: 11px;">© Onatrix. All Rights Reserved.</p>
+          <p style="color: white; margin: 0px; font-size: 11px;">Credits to Themesflat</p>
+      </div>
+  </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@@popperjs/core@@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <script src="https://unpkg.com/boxicons@@2.1.4/dist/boxicons.js"></script>
+  </body>
+</html>
